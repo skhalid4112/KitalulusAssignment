@@ -1,6 +1,6 @@
 # KitalulusAssignment
 
-Summary Points: 
+Summary Points:
 Following are summary points and suggestions which can be implemented if we have more time to work on it.
 
 1-v6.exchangerate-api is used to get exchange rate instead of recommended fixer.io due to restrictions on free account subscription plan. 
@@ -12,3 +12,19 @@ Following are summary points and suggestions which can be implemented if we have
 4-For storing exchange rates queried so far, a list is used for now but this can be replaced by database. 
 
 5-Constant strings used in this project should be fetched from database to avoid changing code if access key or url is changed. 
+
+Demo:
+1-Get Country Details
+API request:
+http://localhost:8080/countryDetails?name=pakistan
+
+API response:
+[{"name":"Islamic Republic of Pakistan","population":220892331,"currencies":[{"currencyCode":"PKR","name":"Pakistani rupee","symbol":"₨","rateToIDR":76.7035}]}]
+
+1-Get Exchange Rate
+API request:
+http://localhost:8080/exchangeRate?fromCurrency=USD&toCurrency=PKR
+
+API response:
+{"fromCurrency":"USD","toCurrency":"PKR","rate":177.5246}
+
