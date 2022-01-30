@@ -24,7 +24,7 @@ http://localhost:8080/countryDetails?name=pakistan
 API response:
 [{"name":"Islamic Republic of Pakistan","population":220892331,"currencies":[{"currencyCode":"PKR","name":"Pakistani rupee","symbol":"₨","rateToIDR":76.7035}]}]
 
-1-Get Exchange Rate
+2-Get Exchange Rate
 
 API request:
 http://localhost:8080/exchangeRate?fromCurrency=USD&toCurrency=PKR
