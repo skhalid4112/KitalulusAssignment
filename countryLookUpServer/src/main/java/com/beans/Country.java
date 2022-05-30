@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Country {
 
+	//name
 	private String name;
 	private int population;
 	private List<Currency> currencies = new ArrayList<>();
